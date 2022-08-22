@@ -32,7 +32,7 @@ docker run --rm \
 
 5. Bash into the laravel container
 ```sh
-docker exec -it youtube-tracker-master-laravel.test-1 bash
+docker exec -it youtube-tracker-laravel.test-1 bash
 ```
 5.1 Generate app key
   ```sh
@@ -45,6 +45,10 @@ php artisan migrate
 5.3 Seed the database
 ```sh
 php artisan db:seed
+```
+5.4 Install npm dependencies
+```sh
+npm install
 ```
 5.4 Start vite server
 ```sh
